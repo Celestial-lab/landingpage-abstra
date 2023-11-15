@@ -1,0 +1,24 @@
+<svg width="205" height="57" viewBox="0 0 205 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_bi_78_4592)">
+<path d="M0 40.7028V4.11693C0 1.66847 1.98486 -0.316406 4.43333 -0.316406H187.908C189.084 -0.316406 190.212 0.150674 191.043 0.982085L203.963 13.9018C204.794 14.7332 205.261 15.8608 205.261 17.0366V52.8836C205.261 55.3321 203.276 57.3169 200.828 57.3169H16.6141C15.4383 57.3169 14.3107 56.8498 13.4793 56.0184L1.29849 43.8376C0.467082 43.0062 0 41.8786 0 40.7028Z" fill="white" fill-opacity="0.1"/>
+<path d="M0.660094 40.7028V4.11693C0.660094 2.03302 2.34942 0.343688 4.43333 0.343688H187.908C188.909 0.343688 189.869 0.741224 190.576 1.44884L203.496 14.3685C204.203 15.0761 204.601 16.0359 204.601 17.0366V52.8836C204.601 54.9675 202.912 56.6568 200.828 56.6568H16.6141C15.6134 56.6568 14.6537 56.2593 13.946 55.5517L1.76525 43.3709L1.29849 43.8376L1.76525 43.3709C1.05763 42.6633 0.660094 41.7035 0.660094 40.7028Z" stroke="url(#paint0_linear_78_4592)" stroke-width="1.32019"/>
+</g>
+<defs>
+<filter id="filter0_bi_78_4592" x="-26.4038" y="-26.7202" width="258.069" height="110.441" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="13.2019"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_78_4592"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_78_4592" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2.64038"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.937667 0 0 0 0 0.716667 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_78_4592"/>
+</filter>
+<linearGradient id="paint0_linear_78_4592" x1="-82.2645" y1="-20.6298" x2="-57.014" y2="112.123" gradientUnits="userSpaceOnUse">
+<stop stop-color="#14F194"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
