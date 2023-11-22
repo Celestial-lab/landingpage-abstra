@@ -39,6 +39,11 @@ body {
 /* VARIABLES */
 
 /* GLOBAL CSS */
+button,
+a {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: var(--black-color);
