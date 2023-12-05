@@ -160,8 +160,13 @@ li {
 
 .sidebar__header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 8px;
   padding: 24px 12px;
+
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .sidebar__nav-list {
