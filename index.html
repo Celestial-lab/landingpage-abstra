@@ -8,99 +8,56 @@
   </head>
   <body>
     <main>
-      <!-- SIDE BAR -->
-      <aside class="sidebar">
-        <div class="sidebar__header">
-          <img class="logo" src="assets/images/svgs/logo.svg" alt="logo" />
-          AbstraDEX
-          <!-- <img class="menu" src="assets/images/svgs/menu.svg" alt="menu" /> -->
-        </div>
-
-        <nav class="sidebar__nav">
-          <ul class="sidebar__nav-list">
-            <li class="sidebar__nav-item">
-              <a class="sidebar__nav-link active">
-                <img
-                  class="nav-link__logo"
-                  src="assets/images/svgs/home-logo.svg"
-                  alt="home-logo"
-                />
-                <span>Homepage</span>
-              </a>
-            </li>
-            <li class="sidebar__nav-item">
-              <a class="sidebar__nav-link active">
-                <img
-                  class="nav-link__logo"
-                  src="assets/images/svgs/swap-logo.svg"
-                  alt="swap-logo"
-                />
-                <span>Swap</span>
-              </a>
-            </li>
-            <li class="sidebar__nav-item">
-              <a class="sidebar__nav-link active">
-                <img
-                  class="nav-link__logo"
-                  src="assets/images/svgs/liquidity-logo.svg"
-                  alt="swap-logo"
-                />
-                <span>Liquidity</span>
-              </a>
-            </li>
-            <li class="sidebar__nav-item">
-              <a class="sidebar__nav-link active">
-                <img
-                  class="nav-link__logo"
-                  src="assets/images/svgs/pools-logo.svg"
-                  alt="pools-logo"
-                />
-                <span>Staking</span>
-              </a>
-            </li>
-            <li class="sidebar__nav-item">
-              <a class="sidebar__nav-link active">
-                <img
-                  class="nav-link__logo"
-                  src="assets/images/svgs/farms-logo.svg"
-                  alt="farms-logo"
-                />
-                <span>Yield Farming</span>
-              </a>
-            </li>
-            <li class="sidebar__nav-item">
-              <a class="sidebar__nav-link active">
-                <img
-                  class="nav-link__logo"
-                  src="assets/images/svgs/launchpad-logo.svg"
-                  alt="launchpad-logo"
-                />
-                <span>Launchpad</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="sidebar__footer">
-          <div class="sidebar__footer-top text-color--white">
-            <img src="/assets/images/svgs/footer-venuswap.svg" alt="" />
-            0.0075
-          </div>
-          <div class="sidebar__footer-button">Buy ABS</div>
-        </div>
-      </aside>
-
       <!-- MAIN SECTION -->
       <section class="main-section">
         <!-- HEADER -->
         <header class="main-section__header">
-          <div class="content-container">
-            <div class="button__wrapper">
-              <button class="venuswap__button" id="buy-ven">
-                <img src="assets/images/svgs/ven-icon.svg" alt="" />
-                Buy VEN
-              </button>
-              <button
+          <nav class="navbar">
+            <div class="sidebar__header">
+              <img
+                class="logo desktop-logo"
+                src="assets/images/svgs/pc-logo.svg"
+                alt="logo"
+              />
+              <img
+                class="logo mobile-logo"
+                src="assets/images/svgs/ven-icon.svg"
+                alt="logo"
+              />
+              AbstraDEX
+            </div>
+
+            <ul class="sidebar__nav-list">
+              <li class="sidebar__nav-item">
+                <a href="#home" class="sidebar__nav-link"> Homepage </a>
+              </li>
+              <li class="sidebar__nav-item">
+                <a href="#team" class="sidebar__nav-link"> Team </a>
+              </li>
+              <li class="sidebar__nav-item">
+                <a href="#partner" class="sidebar__nav-link"> Partner </a>
+              </li>
+              <li class="sidebar__nav-item">
+                <a href="#contact" class="sidebar__nav-link"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="button__wrapper">
+            <button class="venuswap__button" id="buy-ven">
+              <img
+                class="logo mobile-logo"
+                src="assets/images/svgs/pc-logo.svg"
+                alt="logo"
+              />
+              <img
+                class="logo desktop-logo"
+                src="assets/images/svgs/ven-icon.svg"
+                alt="logo"
+              />
+              Buy VEN
+            </button>
+            <!-- <button
                 class="venuswap__button text-color--white bg-button--dropdown"
               >
                 <img src="assets/images/svgs/zetachain-icon.svg" alt="" />
@@ -110,1040 +67,206 @@
                   src="assets/images/svgs/arrow.svg"
                   alt=""
                 />
-              </button>
-              <button class="venuswap__button bg-color--main" id="launch-app">
-                Launch App
-              </button>
-            </div>
+              </button> -->
+            <button
+              class="venuswap__button launch-app bg-color--main"
+              id="launch-app"
+            >
+              Launch App
+            </button>
           </div>
         </header>
 
         <!-- MAIN SECTION CONTENT -->
         <div class="main-section__content">
-          <!-- HERO BANNER SECTION -->
-          <section class="main-section__content__hero section-mb">
-            <div
-              class="content-container main-section__content__hero--container"
+          <section id="home">
+            <!-- HERO BANNER SECTION -->
+            <section
+              class="main-section__content__hero section-mb content-container"
             >
-              <div class="main-section__content__hero-main-text">
-                Discover the decentralized suite <br />Security - Quick - Trust
-                for your digital assets.
-              </div>
-
-              <span class="main-section__content__hero-view-docs">
-                View the Docs
-                <img src="assets/images/svgs/long-arrow-icon.svg" alt="" />
-              </span>
-            </div>
-          </section>
-
-          <!-- ABOUT ZETACHAIN SECTION -->
-          <section class="content-container">
-            <!-- ABOUT ZETACHAIN LEFT -->
-            <div class="main-section__content__about section-mb">
-              <div class="main-section__content__about-left">
-                <div class="about-zetachain--bg">
-                  <div class="about-zetachain-item">
-                    <div class="about-zetachain-item-title">110M</div>
-                    <div class="about-zetachain-item-desc">
-                      TOTAL VALUE LOCKED
-                    </div>
-                  </div>
+              <div class="main-section__content__hero--container">
+                <div class="main-section__content__hero-main-text">
+                  Discover the decentralized suite <br />Security - Quick -
+                  Trust for your digital assets.
                 </div>
-                <div class="about-zetachain--bg">
-                  <div class="about-zetachain-item">
-                    <div class="about-zetachain-item-title">$80B</div>
-                    <div class="about-zetachain-item-desc">
-                      TOTAL TRADING VOLUME
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- ABOUT ZETACHAIN RIGHT -->
-              <div class="main-section__content__about-right">
-                <div
-                  class="main-section__content__about-right-title text-color--main"
-                >
-                  Unlock Opportunities<br />
-                  Unleash the power of DeFi
-                  <span class="text-color--white">on Zetachain</span>
-                </div>
-                <div class="main-section__content__about-right-desc">
-                  AbstraDEX offers an array of advantages that are set to
-                  transform the way you experience the limitless potential of
-                  DeFi on our cutting-edge blockchain platform.
+                <span class="main-section__content__hero-view-docs">
+                  View the Docs
+                  <img
+                    class="mobile-logo"
+                    src="assets/images/svgs/long-arrow-icon.svg"
+                    alt=""
+                  />
+                </span>
+
+                <div class="hero-button__wrapper">
+                  <button class="venuswap__button buy-ven">
+                    <img
+                      class="logo mobile-logo"
+                      src="assets/images/svgs/pc-logo.svg"
+                      alt="logo"
+                    />
+                    <img
+                      class="logo desktop-logo"
+                      src="assets/images/svgs/ven-icon.svg"
+                      alt="logo"
+                    />
+                    Buy VEN
+                  </button>
+                  <button class="venuswap__button launch-app bg-color--main">
+                    Launch App
+                  </button>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <!-- WHY CHOOSE SECTION -->
-          <section class="main-section__why-choose section-mb">
-            <div class="main-section__why-choose__circle"></div>
-            <div class="main-section__why-choose-bg"></div>
-            <!-- WHY CHOOSE -->
-            <div class="content-container">
-              <div class="main-section__why-choose--container">
-                <h2
-                  class="main-section__why-choose-title section-title text-color--main"
-                >
-                  Why choose <span class="text-color--white">AbstraDEX ?</span>
-                </h2>
-                <div class="main-section__why-choose-items">
-                  <div class="main-section__why-choose-item--bg">
-                    <div class="main-section__why-choose-item">
-                      <img
-                        src="assets/images/svgs/why-choose-inno-icon.svg"
-                        alt="why-choose-item-icon"
-                        class="main-section__why-choose-item-icon"
-                      />
-                      <div
-                        class="main-section__why-choose-item-title text-color--white"
-                      >
-                        Innovation
-                      </div>
-                      <div class="main-section__why-choose-item-desc">
-                        AbstraDEX opens doors for innovative blockchain
-                        projects, offering early access to groundbreaking tokens
+            <!-- ABOUT SECTION -->
+            <section class="content-container" id="about">
+              <!-- ABOUT LEFT -->
+              <div class="main-section__content__about section-mb">
+                <div class="main-section__content__about-left">
+                  <div class="about-zetachain--bg">
+                    <div class="about-zetachain-item">
+                      <div class="about-zetachain-item-title">110M</div>
+                      <div class="about-zetachain-item-desc">
+                        TOTAL VALUE LOCKED
                       </div>
                     </div>
                   </div>
-
-                  <div class="main-section__why-choose-item--bg">
-                    <div class="main-section__why-choose-item">
-                      <img
-                        src="assets/images/svgs/why-choose-lucr-icon.svg"
-                        alt="why-choose-item-icon"
-                        class="main-section__why-choose-item-icon"
-                      />
-                      <div
-                        class="main-section__why-choose-item-title text-color--white"
-                      >
-                        Lucrative
-                      </div>
-                      <div class="main-section__why-choose-item-desc">
-                        Unlock the potential of compounding rewards and bolster
-                        your crypto holdings with our secure staking platform
+                  <div class="about-zetachain--bg">
+                    <div class="about-zetachain-item">
+                      <div class="about-zetachain-item-title">$80B</div>
+                      <div class="about-zetachain-item-desc">
+                        TOTAL TRADING VOLUME
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="main-section__why-choose-item--bg">
-                    <div class="main-section__why-choose-item">
-                      <img
-                        src="assets/images/svgs/why-choose-secu-icon.svg"
-                        alt="why-choose-item-icon"
-                        class="main-section__why-choose-item-icon"
-                      />
-                      <div
-                        class="main-section__why-choose-item-title text-color--white"
-                      >
-                        Secure
-                      </div>
-                      <div class="main-section__why-choose-item-desc">
-                        Built on the Zetachain, AbstraDEX is fortified with
-                        advanced security protocols, smartcontract audits to
-                        protect your assets and data.
-                      </div>
-                    </div>
+                <!-- ABOUT RIGHT -->
+                <div class="main-section__content__about-right">
+                  <div
+                    class="main-section__content__about-right-title text-color--main"
+                  >
+                    Unlock Opportunities<br />
+                    Unleash the power of DeFi
+                    <span class="text-color--white">on Multi-chain</span>
                   </div>
-
-                  <div class="main-section__why-choose-item--bg">
-                    <div class="main-section__why-choose-item">
-                      <img
-                        src="assets/images/svgs/why-choose-perf-icon.svg"
-                        alt="why-choose-item-icon"
-                        class="main-section__why-choose-item-icon"
-                      />
-                      <div
-                        class="main-section__why-choose-item-title text-color--white"
-                      >
-                        Performance
-                      </div>
-                      <div class="main-section__why-choose-item-desc">
-                        Experience lightning-fast transactions and high
-                        throughput on our optimized blockchain infrastructure.
-                      </div>
-                    </div>
+                  <div class="main-section__content__about-right-desc">
+                    AbstraDEX offers an array of advantages that are set to
+                    transform the way you experience the limitless potential of
+                    DeFi on our cutting-edge blockchain platform.
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
+
+            <!-- WHY CHOOSE SECTION -->
+            <section class="main-section__why-choose section-mb">
+              <div class="main-section__why-choose__circle">
+                <div class="circle-box"></div>
+              </div>
+              <div class="main-section__why-choose-bg"></div>
+              <!-- WHY CHOOSE -->
+              <div class="content-container">
+                <div class="main-section__why-choose--container">
+                  <h2
+                    class="main-section__why-choose-title section-title text-color--main"
+                  >
+                    Why choose
+                    <span class="text-color--white">AbstraDEX ?</span>
+                  </h2>
+                  <div class="main-section__why-choose-items">
+                    <div class="main-section__why-choose-item--bg">
+                      <div class="main-section__why-choose-item">
+                        <img
+                          src="assets/images/svgs/why-choose-inno-icon.svg"
+                          alt="why-choose-item-icon"
+                          class="main-section__why-choose-item-icon"
+                        />
+                        <div
+                          class="main-section__why-choose-item-title text-color--white"
+                        >
+                          Innovation
+                        </div>
+                        <div class="main-section__why-choose-item-desc">
+                          AbstraDEX opens doors for innovative blockchain
+                          projects, offering early access to groundbreaking
+                          tokens
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="main-section__why-choose-item--bg">
+                      <div class="main-section__why-choose-item">
+                        <img
+                          src="assets/images/svgs/why-choose-lucr-icon.svg"
+                          alt="why-choose-item-icon"
+                          class="main-section__why-choose-item-icon"
+                        />
+                        <div
+                          class="main-section__why-choose-item-title text-color--white"
+                        >
+                          Lucrative
+                        </div>
+                        <div class="main-section__why-choose-item-desc">
+                          Unlock the potential of compounding rewards and
+                          bolster your crypto holdings with our secure staking
+                          platform
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="main-section__why-choose-item--bg">
+                      <div class="main-section__why-choose-item">
+                        <img
+                          src="assets/images/svgs/why-choose-secu-icon.svg"
+                          alt="why-choose-item-icon"
+                          class="main-section__why-choose-item-icon"
+                        />
+                        <div
+                          class="main-section__why-choose-item-title text-color--white"
+                        >
+                          Secure
+                        </div>
+                        <div class="main-section__why-choose-item-desc">
+                          Built on the ABS chain, AbstraDEX is fortified with
+                          advanced security protocols, smartcontract audits to
+                          protect your assets and data.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="main-section__why-choose-item--bg">
+                      <div class="main-section__why-choose-item">
+                        <img
+                          src="assets/images/svgs/why-choose-perf-icon.svg"
+                          alt="why-choose-item-icon"
+                          class="main-section__why-choose-item-icon"
+                        />
+                        <div
+                          class="main-section__why-choose-item-title text-color--white"
+                        >
+                          Performance
+                        </div>
+                        <div class="main-section__why-choose-item-desc">
+                          Experience lightning-fast transactions and high
+                          throughput on our optimized blockchain infrastructure.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </section>
 
           <div class="content-container">
-            <!-- TIER LAUNCHPAD SECTION -->
-            <section class="main-section__tier-section section-mb">
-              <h2
-                class="main-section__tier-section-title section-title text-color--main"
-              >
-                Tier launchpad
-              </h2>
-              <div class="main-section__tier-section-items--bg">
-                <table
-                  class="main-section__tier-section-items text-color--white"
-                >
-                  <tr>
-                    <th></th>
-                    <td>
-                      <img
-                        src="assets/images/svgs/tier-cosmic-icon.svg"
-                        alt=""
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="assets/images/svgs/tier-starlight-icon.svg"
-                        alt=""
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="assets/images/svgs/tier-nebula-icon.svg"
-                        alt=""
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="assets/images/svgs/tier-celestial-icon.svg"
-                        alt=""
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="assets/images/svgs/tier-galactic-icon.svg"
-                        alt=""
-                      />
-                    </td>
-                  </tr>
-                  <tr class="main-section__tier-section-item__tier-name">
-                    <th></th>
-                    <td>Cosmic</td>
-                    <td>Starlight</td>
-                    <td>Nebula</td>
-                    <td>Celestial</td>
-                    <td>Galactic</td>
-                  </tr>
-                  <tr>
-                    <th>Min VEN Stake</th>
-                    <td>100.000 VEN</td>
-                    <td>200.000 VEN</td>
-                    <td>300.000 VEN</td>
-                    <td>400.000 VEN</td>
-                    <td>500.000 VEN</td>
-                  </tr>
-                  <tr>
-                    <th>Guaranteed</th>
-                    <td>Lottery</td>
-                    <td>Guaranteed</td>
-                    <td>Guaranteed</td>
-                    <td>Guaranteed</td>
-                    <td>Guaranteed</td>
-                  </tr>
-                  <tr>
-                    <th>Allocation</th>
-                    <td>5% Pool</td>
-                    <td>10% Pool</td>
-                    <td>15% Pool</td>
-                    <td>30% Pool</td>
-                    <td>40% Pool</td>
-                  </tr>
-                  <tr>
-                    <th>APR</th>
-                    <td>20%</td>
-                    <td>50%</td>
-                    <td>75%</td>
-                    <td>120%</td>
-                    <td>150%</td>
-                  </tr>
-                </table>
-              </div>
-            </section>
-
-            <!-- FUNDRAISING SECTION -->
-            <section class="main-section__fundraising-section section-mb">
-              <div class="main-section__fundraising-section__top">
-                <h2
-                  class="main-section__fundraising-section-title section-title-no-mb text-color--main"
-                >
-                  Fundraising
-                </h2>
-
-                <div class="main-section__fundraising-section__status-wrapper">
-                  <div
-                    class="main-section__fundraising-section__status--bg text-color--main"
-                  >
-                    <div class="main-section__fundraising-section__status">
-                      Upcoming
-                    </div>
-                  </div>
-                  <div
-                    class="main-section__fundraising-section__status--bg text-color--main"
-                  >
-                    <div class="main-section__fundraising-section__status">
-                      Opening
-                    </div>
-                  </div>
-                  <div
-                    class="main-section__fundraising-section__status--bg text-color--main"
-                  >
-                    <div class="main-section__fundraising-section__status">
-                      Completed
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="main-section__fundraising-section-items">
-                <div class="main-section__fundraising-section-item--bg">
-                  <div class="main-section__fundraising-section-item">
-                    <div
-                      class="main-section__fundraising-section-item__avatar-group--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__avatar-group"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__avatar"
-                        >
-                          <img
-                            src="/assets/images/svgs/fundraising-avatar.svg"
-                            alt=""
-                          />
-                          <span
-                            class="main-section__fundraising-section-item__group-name text-color--white"
-                            >AbstraDEX
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__info text-color--white"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Date
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          31 August, 2023
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          Total Allocation
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          20,000,000 VEN
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Rate
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          200,000 VEN/ETH
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__total-raise--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__total-raise w-100 text-color--main"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--name"
-                        >
-                          Total Raise
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--value"
-                        >
-                          100 ETH
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-section__fundraising-section-item--bg">
-                  <div class="main-section__fundraising-section-item">
-                    <div
-                      class="main-section__fundraising-section-item__avatar-group--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__avatar-group"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__avatar"
-                        >
-                          <img
-                            src="/assets/images/svgs/fundraising-avatar.svg"
-                            alt=""
-                          />
-                          <span
-                            class="main-section__fundraising-section-item__group-name text-color--white"
-                            >AbstraDEX
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__info text-color--white"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Date
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          31 August, 2023
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          Total Allocation
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          20,000,000 VEN
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Rate
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          200,000 VEN/ETH
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__total-raise--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__total-raise w-100 text-color--main"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--name"
-                        >
-                          Total Raise
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--value"
-                        >
-                          100 ETH
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-section__fundraising-section-item--bg">
-                  <div class="main-section__fundraising-section-item">
-                    <div
-                      class="main-section__fundraising-section-item__avatar-group--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__avatar-group"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__avatar"
-                        >
-                          <img
-                            src="/assets/images/svgs/fundraising-avatar.svg"
-                            alt=""
-                          />
-                          <span
-                            class="main-section__fundraising-section-item__group-name text-color--white"
-                            >AbstraDEX
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__info text-color--white"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Date
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          31 August, 2023
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          Total Allocation
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          20,000,000 VEN
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Rate
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          200,000 VEN/ETH
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__total-raise--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__total-raise w-100 text-color--main"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--name"
-                        >
-                          Total Raise
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--value"
-                        >
-                          100 ETH
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-section__fundraising-section-item--bg">
-                  <div class="main-section__fundraising-section-item">
-                    <div
-                      class="main-section__fundraising-section-item__avatar-group--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__avatar-group"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__avatar"
-                        >
-                          <img
-                            src="/assets/images/svgs/fundraising-avatar.svg"
-                            alt=""
-                          />
-                          <span
-                            class="main-section__fundraising-section-item__group-name text-color--white"
-                            >AbstraDEX
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__info text-color--white"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Date
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          31 August, 2023
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          Total Allocation
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          20,000,000 VEN
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Rate
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          200,000 VEN/ETH
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__total-raise--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__total-raise w-100 text-color--main"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--name"
-                        >
-                          Total Raise
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--value"
-                        >
-                          100 ETH
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-section__fundraising-section-item--bg">
-                  <div class="main-section__fundraising-section-item">
-                    <div
-                      class="main-section__fundraising-section-item__avatar-group--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__avatar-group"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__avatar"
-                        >
-                          <img
-                            src="/assets/images/svgs/fundraising-avatar.svg"
-                            alt=""
-                          />
-                          <span
-                            class="main-section__fundraising-section-item__group-name text-color--white"
-                            >AbstraDEX
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__info text-color--white"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Date
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          31 August, 2023
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          Total Allocation
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          20,000,000 VEN
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Rate
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          200,000 VEN/ETH
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__total-raise--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__total-raise w-100 text-color--main"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--name"
-                        >
-                          Total Raise
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--value"
-                        >
-                          100 ETH
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-section__fundraising-section-item--bg">
-                  <div class="main-section__fundraising-section-item">
-                    <div
-                      class="main-section__fundraising-section-item__avatar-group--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__avatar-group"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__avatar"
-                        >
-                          <img
-                            src="/assets/images/svgs/fundraising-avatar.svg"
-                            alt=""
-                          />
-                          <span
-                            class="main-section__fundraising-section-item__group-name text-color--white"
-                            >AbstraDEX
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__info text-color--white"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Date
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          31 August, 2023
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          Total Allocation
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          20,000,000 VEN
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Rate
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          200,000 VEN/ETH
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__total-raise--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__total-raise w-100 text-color--main"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--name"
-                        >
-                          Total Raise
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--value"
-                        >
-                          100 ETH
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-section__fundraising-section-item--bg">
-                  <div class="main-section__fundraising-section-item">
-                    <div
-                      class="main-section__fundraising-section-item__avatar-group--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__avatar-group"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__avatar"
-                        >
-                          <img
-                            src="/assets/images/svgs/fundraising-avatar.svg"
-                            alt=""
-                          />
-                          <span
-                            class="main-section__fundraising-section-item__group-name text-color--white"
-                            >AbstraDEX
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__info text-color--white"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Date
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          31 August, 2023
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          Total Allocation
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          20,000,000 VEN
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Rate
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          200,000 VEN/ETH
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__total-raise--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__total-raise w-100 text-color--main"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--name"
-                        >
-                          Total Raise
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--value"
-                        >
-                          100 ETH
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-section__fundraising-section-item--bg">
-                  <div class="main-section__fundraising-section-item">
-                    <div
-                      class="main-section__fundraising-section-item__avatar-group--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__avatar-group"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__avatar"
-                        >
-                          <img
-                            src="/assets/images/svgs/fundraising-avatar.svg"
-                            alt=""
-                          />
-                          <span
-                            class="main-section__fundraising-section-item__group-name text-color--white"
-                            >AbstraDEX
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__info text-color--white"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Date
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          31 August, 2023
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          Total Allocation
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          20,000,000 VEN
-                        </div>
-                      </div>
-
-                      <div
-                        class="main-section__fundraising-section-item__info-item"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__info--name"
-                        >
-                          IDO Rate
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__info--value"
-                        >
-                          200,000 VEN/ETH
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="main-section__fundraising-section-item__total-raise--bg"
-                    >
-                      <div
-                        class="main-section__fundraising-section-item__total-raise w-100 text-color--main"
-                      >
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--name"
-                        >
-                          Total Raise
-                        </div>
-                        <div
-                          class="main-section__fundraising-section-item__total-raise--value"
-                        >
-                          100 ETH
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
             <!-- PARTNERS SECTION -->
-            <section class="main-section__partners-section section-mb">
+            <section
+              class="main-section__partners-section section-mb"
+              id="partner"
+            >
               <h2
                 class="main-section__partners-section-title section-title text-color--main"
               >
@@ -1199,7 +322,7 @@
             </section>
 
             <!-- TEAM SECTION -->
-            <section class="main-section__team-section section-mb">
+            <section class="main-section__team-section section-mb" id="team">
               <div class="main-section__team-section-left">
                 <h2
                   class="main-section__partners-section-title section-title-no-mb text-color--main"
@@ -1354,14 +477,21 @@
                   </div>
                 </div>
               </div>
-              <div class="main-section__footer-left__socials">
-                <a href="https://twitter.com/AbstraDEX" target="_blank">
-                  <img src="/assets/images/svgs/twitter.svg" alt="" />
-                </a>
-                <a href="https://t.me/Abstradex" target="_blank">
-                  <img src="/assets/images/svgs/telegram.svg" alt="" />
-                </a>
-              </div>
+            </div>
+
+            <div class="main-section__footer-left__socials">
+              <a href="https://twitter.com/AbstraDEX" target="_blank">
+                <img src="/assets/images/svgs/twitter.svg" alt="" />
+              </a>
+              <a href="https://discord.gg/YTrtVFkbZe" target="_blank">
+                <img src="/assets/images/svgs/discord.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/AbstraDEX" target="_blank">
+                <img src="/assets/images/svgs/telegram.svg" alt="" />
+              </a>
+              <a href="https://linktr.ee/abstradex" target="_blank">
+                <img src="/assets/images/svgs/linktree.svg" alt="" />
+              </a>
             </div>
 
             <div class="main-section__footer-right text-color--white">
