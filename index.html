@@ -7,44 +7,101 @@
     <title>AbstraDEX</title>
   </head>
   <body>
-    <main>
-      <!-- MAIN SECTION -->
-      <section class="main-section">
-        <!-- HEADER -->
-        <header class="main-section__header">
-          <nav class="navbar">
-            <div class="sidebar__header">
-              <img
-                class="logo desktop-logo"
-                src="assets/images/svgs/pc-logo.svg"
-                alt="logo"
-              />
-              <img
-                class="logo mobile-logo"
-                src="assets/images/svgs/ven-icon.svg"
-                alt="logo"
-              />
-              AbstraDEX
-            </div>
+    <!-- MAIN SECTION -->
+    <!-- HEADER -->
+    <header class="main-section__header">
+      <nav class="navbar w-100">
+        <button class="mobile-menu-button">
+          <img src="assets/images/svgs/menu.svg" alt="menu-button" />
+        </button>
 
-            <ul class="sidebar__nav-list">
-              <li class="sidebar__nav-item">
-                <a href="#home" class="sidebar__nav-link"> Homepage </a>
-              </li>
-              <li class="sidebar__nav-item">
-                <a href="#team" class="sidebar__nav-link"> Team </a>
-              </li>
-              <li class="sidebar__nav-item">
-                <a href="#partner" class="sidebar__nav-link"> Partner </a>
-              </li>
-              <li class="sidebar__nav-item">
-                <a href="#contact" class="sidebar__nav-link"> Contact </a>
-              </li>
-            </ul>
-          </nav>
+        <div class="sidebar__header">
+          <img
+            class="logo desktop-logo"
+            src="assets/images/svgs/pc-logo.svg"
+            alt="logo"
+          />
+          <img
+            class="logo mobile-logo"
+            src="assets/images/svgs/ven-icon.svg"
+            alt="logo"
+          />
+          AbstraDEX
+        </div>
 
-          <div class="button__wrapper">
-            <button class="venuswap__button" id="buy-ven">
+        <ul class="sidebar__nav-list content-container">
+          <button class="close-menu-button">Close</button>
+
+          <li class="sidebar__nav-item active">
+            <a href="#home" class="sidebar__nav-link"> Homepage </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#team" class="sidebar__nav-link"> Team </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#partner" class="sidebar__nav-link"> Partner </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#contact" class="sidebar__nav-link"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="button__wrapper">
+        <button class="venuswap__button" id="buy-ven">
+          <img
+            class="logo mobile-logo"
+            src="assets/images/svgs/pc-logo.svg"
+            alt="logo"
+          />
+          <img
+            class="logo desktop-logo"
+            src="assets/images/svgs/ven-icon.svg"
+            alt="logo"
+          />
+          Buy ABS
+        </button>
+        <!-- <button
+                class="venuswap__button text-color--white bg-button--dropdown"
+              >
+                <img src="assets/images/svgs/zetachain-icon.svg" alt="" />
+                Zetachain
+                <img
+                  class="dropdown-icon"
+                  src="assets/images/svgs/arrow.svg"
+                  alt=""
+                />
+              </button> -->
+        <button
+          class="venuswap__button launch-app bg-color--main"
+          id="launch-app"
+        >
+          Launch App
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN SECTION CONTENT -->
+    <section id="home">
+      <!-- HERO BANNER SECTION -->
+      <div class="main-section__content__hero section-mb content-container">
+        <div class="main-section__content__hero--container">
+          <div class="main-section__content__hero-main-text">
+            Discover the decentralized suite <br />Security - Quick - Trust for
+            your digital assets.
+          </div>
+
+          <!-- <span class="main-section__content__hero-view-docs">
+            View the Docs
+            <img
+              class="mobile-logo"
+              src="assets/images/svgs/long-arrow-icon.svg"
+              alt=""
+            />
+          </span>
+
+          <div class="hero-button__wrapper">
+            <button class="venuswap__button buy-ven">
               <img
                 class="logo mobile-logo"
                 src="assets/images/svgs/pc-logo.svg"
@@ -57,454 +114,367 @@
               />
               Buy VEN
             </button>
-            <!-- <button
-                class="venuswap__button text-color--white bg-button--dropdown"
-              >
-                <img src="assets/images/svgs/zetachain-icon.svg" alt="" />
-                Zetachain
-                <img
-                  class="dropdown-icon"
-                  src="assets/images/svgs/arrow.svg"
-                  alt=""
-                />
-              </button> -->
-            <button
-              class="venuswap__button launch-app bg-color--main"
-              id="launch-app"
-            >
+            <button class="venuswap__button launch-app bg-color--main">
               Launch App
             </button>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <section class="content-container" id="about">
+        <!-- ABOUT LEFT -->
+        <div class="main-section__content__about section-mb">
+          <div class="main-section__content__about-left">
+            <div class="about-zetachain--bg">
+              <div class="about-zetachain-item">
+                <div class="about-zetachain-item-title">110M</div>
+                <div class="about-zetachain-item-desc">TOTAL VALUE LOCKED</div>
+              </div>
+            </div>
+            <div class="about-zetachain--bg">
+              <div class="about-zetachain-item">
+                <div class="about-zetachain-item-title">$80B</div>
+                <div class="about-zetachain-item-desc">
+                  TOTAL TRADING VOLUME
+                </div>
+              </div>
+            </div>
           </div>
-        </header>
 
-        <!-- MAIN SECTION CONTENT -->
-        <div class="main-section__content">
-          <section id="home">
-            <!-- HERO BANNER SECTION -->
-            <section
-              class="main-section__content__hero section-mb content-container"
+          <!-- ABOUT RIGHT -->
+          <div class="main-section__content__about-right">
+            <div
+              class="main-section__content__about-right-title text-color--main"
             >
-              <div class="main-section__content__hero--container">
-                <div class="main-section__content__hero-main-text">
-                  Discover the decentralized suite <br />Security - Quick -
-                  Trust for your digital assets.
-                </div>
+              Unlock Opportunities<br />
+              Unleash the power of DeFi
+              <span class="text-color--white">on Multi-chain</span>
+            </div>
+            <div class="main-section__content__about-right-desc">
+              AbstraDEX offers an array of advantages that are set to transform
+              the way you experience the limitless potential of DeFi on our
+              cutting-edge blockchain platform.
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <span class="main-section__content__hero-view-docs">
-                  View the Docs
-                  <img
-                    class="mobile-logo"
-                    src="assets/images/svgs/long-arrow-icon.svg"
-                    alt=""
-                  />
-                </span>
-
-                <div class="hero-button__wrapper">
-                  <button class="venuswap__button buy-ven">
+      <!-- WHY CHOOSE SECTION -->
+      <section class="main-section__why-choose section-mb">
+        <div class="main-section__why-choose__circle">
+          <div class="circle-box"></div>
+        </div>
+        <div class="main-section__why-choose-bg"></div>
+        <!-- WHY CHOOSE -->
+        <div class="content-container">
+          <div class="main-section__why-choose--container">
+            <h2
+              class="main-section__why-choose-title section-title text-color--main"
+            >
+              Why choose
+              <span class="text-color--white">AbstraDEX ?</span>
+            </h2>
+            <div class="main-section__why-choose-items">
+              <div class="main-section__why-choose-item--bg">
+                <div class="main-section__why-choose-item">
+                  <div class="main-section__why-choose-item-icon">
                     <img
-                      class="logo mobile-logo"
-                      src="assets/images/svgs/pc-logo.svg"
-                      alt="logo"
+                      src="assets/images/svgs/why-choose-inno-icon.svg"
+                      alt="why-choose-item-icon"
                     />
-                    <img
-                      class="logo desktop-logo"
-                      src="assets/images/svgs/ven-icon.svg"
-                      alt="logo"
-                    />
-                    Buy VEN
-                  </button>
-                  <button class="venuswap__button launch-app bg-color--main">
-                    Launch App
-                  </button>
-                </div>
-              </div>
-            </section>
-
-            <!-- ABOUT SECTION -->
-            <section class="content-container" id="about">
-              <!-- ABOUT LEFT -->
-              <div class="main-section__content__about section-mb">
-                <div class="main-section__content__about-left">
-                  <div class="about-zetachain--bg">
-                    <div class="about-zetachain-item">
-                      <div class="about-zetachain-item-title">110M</div>
-                      <div class="about-zetachain-item-desc">
-                        TOTAL VALUE LOCKED
-                      </div>
-                    </div>
                   </div>
-                  <div class="about-zetachain--bg">
-                    <div class="about-zetachain-item">
-                      <div class="about-zetachain-item-title">$80B</div>
-                      <div class="about-zetachain-item-desc">
-                        TOTAL TRADING VOLUME
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- ABOUT RIGHT -->
-                <div class="main-section__content__about-right">
                   <div
-                    class="main-section__content__about-right-title text-color--main"
+                    class="main-section__why-choose-item-title text-color--white"
                   >
-                    Unlock Opportunities<br />
-                    Unleash the power of DeFi
-                    <span class="text-color--white">on Multi-chain</span>
+                    Innovation
                   </div>
-                  <div class="main-section__content__about-right-desc">
-                    AbstraDEX offers an array of advantages that are set to
-                    transform the way you experience the limitless potential of
-                    DeFi on our cutting-edge blockchain platform.
+                  <div class="main-section__why-choose-item-desc">
+                    AbstraDEX opens doors for innovative blockchain projects,
+                    offering early access to groundbreaking tokens
                   </div>
                 </div>
               </div>
-            </section>
 
-            <!-- WHY CHOOSE SECTION -->
-            <section class="main-section__why-choose section-mb">
-              <div class="main-section__why-choose__circle">
-                <div class="circle-box"></div>
-              </div>
-              <div class="main-section__why-choose-bg"></div>
-              <!-- WHY CHOOSE -->
-              <div class="content-container">
-                <div class="main-section__why-choose--container">
-                  <h2
-                    class="main-section__why-choose-title section-title text-color--main"
+              <div class="main-section__why-choose-item--bg">
+                <div class="main-section__why-choose-item">
+                  <div class="main-section__why-choose-item-icon">
+                    <img
+                      src="assets/images/svgs/why-choose-lucr-icon.svg"
+                      alt="why-choose-item-icon"
+                    />
+                  </div>
+                  <div
+                    class="main-section__why-choose-item-title text-color--white"
                   >
-                    Why choose
-                    <span class="text-color--white">AbstraDEX ?</span>
-                  </h2>
-                  <div class="main-section__why-choose-items">
-                    <div class="main-section__why-choose-item--bg">
-                      <div class="main-section__why-choose-item">
-                        <img
-                          src="assets/images/svgs/why-choose-inno-icon.svg"
-                          alt="why-choose-item-icon"
-                          class="main-section__why-choose-item-icon"
-                        />
-                        <div
-                          class="main-section__why-choose-item-title text-color--white"
-                        >
-                          Innovation
-                        </div>
-                        <div class="main-section__why-choose-item-desc">
-                          AbstraDEX opens doors for innovative blockchain
-                          projects, offering early access to groundbreaking
-                          tokens
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="main-section__why-choose-item--bg">
-                      <div class="main-section__why-choose-item">
-                        <img
-                          src="assets/images/svgs/why-choose-lucr-icon.svg"
-                          alt="why-choose-item-icon"
-                          class="main-section__why-choose-item-icon"
-                        />
-                        <div
-                          class="main-section__why-choose-item-title text-color--white"
-                        >
-                          Lucrative
-                        </div>
-                        <div class="main-section__why-choose-item-desc">
-                          Unlock the potential of compounding rewards and
-                          bolster your crypto holdings with our secure staking
-                          platform
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="main-section__why-choose-item--bg">
-                      <div class="main-section__why-choose-item">
-                        <img
-                          src="assets/images/svgs/why-choose-secu-icon.svg"
-                          alt="why-choose-item-icon"
-                          class="main-section__why-choose-item-icon"
-                        />
-                        <div
-                          class="main-section__why-choose-item-title text-color--white"
-                        >
-                          Secure
-                        </div>
-                        <div class="main-section__why-choose-item-desc">
-                          Built on the ABS chain, AbstraDEX is fortified with
-                          advanced security protocols, smartcontract audits to
-                          protect your assets and data.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="main-section__why-choose-item--bg">
-                      <div class="main-section__why-choose-item">
-                        <img
-                          src="assets/images/svgs/why-choose-perf-icon.svg"
-                          alt="why-choose-item-icon"
-                          class="main-section__why-choose-item-icon"
-                        />
-                        <div
-                          class="main-section__why-choose-item-title text-color--white"
-                        >
-                          Performance
-                        </div>
-                        <div class="main-section__why-choose-item-desc">
-                          Experience lightning-fast transactions and high
-                          throughput on our optimized blockchain infrastructure.
-                        </div>
-                      </div>
-                    </div>
+                    Lucrative
+                  </div>
+                  <div class="main-section__why-choose-item-desc">
+                    Unlock the potential of compounding rewards and bolster your
+                    crypto holdings with our secure staking platform
                   </div>
                 </div>
               </div>
-            </section>
-          </section>
 
-          <div class="content-container">
-            <!-- PARTNERS SECTION -->
-            <section
-              class="main-section__partners-section section-mb"
-              id="partner"
+              <div class="main-section__why-choose-item--bg">
+                <div class="main-section__why-choose-item">
+                  <div class="main-section__why-choose-item-icon">
+                    <img
+                      src="assets/images/svgs/why-choose-secu-icon.svg"
+                      alt="why-choose-item-icon"
+                    />
+                  </div>
+                  <div
+                    class="main-section__why-choose-item-title text-color--white"
+                  >
+                    Secure
+                  </div>
+                  <div class="main-section__why-choose-item-desc">
+                    Built on the ABS chain, AbstraDEX is fortified with advanced
+                    security protocols, smartcontract audits to protect your
+                    assets and data.
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-section__why-choose-item--bg">
+                <div class="main-section__why-choose-item">
+                  <div class="main-section__why-choose-item-icon">
+                    <img
+                      src="assets/images/svgs/why-choose-perf-icon.svg"
+                      alt="why-choose-item-icon"
+                    />
+                  </div>
+                  <div
+                    class="main-section__why-choose-item-title text-color--white"
+                  >
+                    Performance
+                  </div>
+                  <div class="main-section__why-choose-item-desc">
+                    Experience lightning-fast transactions and high throughput
+                    on our optimized blockchain infrastructure.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- PARTNERS SECTION -->
+    <section class="main-section__partners-section section-mb" id="partner">
+      <div class="content-container">
+        <h2
+          class="main-section__partners-section-title section-title text-color--main"
+        >
+          Partners
+        </h2>
+
+        <div class="main-section__partners-section-items">
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-1.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-2.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-3.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-4.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-5.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-6.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-7.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-8.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-9.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-10.svg" alt="partner-icon" />
+          </div>
+          <div class="main-section__partners-section-item">
+            <img src="assets/images/svgs/partner-11.svg" alt="partner-icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="section-mb" id="team">
+      <div class="content-container main-section__team-section">
+        <div class="main-section__team-section-left">
+          <h2
+            class="main-section__partners-section-title section-title-no-mb text-color--main"
+          >
+            Meet the team
+          </h2>
+          <p class="main-section__partners-section-desc">
+            Our exceptional core team drives the vision of AbstraDEX with
+            unwavering dedication. Experience and passion for DeFi, AbstraDEX
+            team sets the stage for an future in blockchain space.
+            <br />Join us for this journey!
+          </p>
+          <div class="main-section__partners-section-contact--bg">
+            <div
+              class="main-section__partners-section-contact w-100 h-100 text-color--main"
             >
-              <h2
-                class="main-section__partners-section-title section-title text-color--main"
+              Contact us
+
+              <img src="assets/images/svgs/green-arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="main-section__team-section-right">
+          <div class="main-section__team-section-right__top">
+            <div class="main-section__team-section-item">
+              <div class="main-section__team-section-item__avatar">
+                <img src="assets/images/svgs/team-ceo.svg" alt="team-avatar" />
+              </div>
+              <div
+                class="main-section__team-section-item__name text-color--white"
               >
-                Partners
-              </h2>
-
-              <div class="main-section__partners-section-items">
+                Johnathan Roman
+              </div>
+              <div
+                class="main-section__team-section-item__position text-color--main"
+              >
+                CEO
+              </div>
+            </div>
+            <div class="main-section__team-section-item">
+              <div class="main-section__team-section-item__avatar">
+                <img src="assets/images/svgs/team-cto.svg" alt="team-avatar" />
+              </div>
+              <div
+                class="main-section__team-section-item__name text-color--white"
+              >
+                Danilo Bastos
+              </div>
+              <div
+                class="main-section__team-section-item__position text-color--main"
+              >
+                CTO
+              </div>
+            </div>
+            <div class="main-section__team-section-item">
+              <div class="main-section__team-section-item__avatar">
+                <img src="assets/images/svgs/team-cfo.svg" alt="team-avatar" />
+              </div>
+              <div
+                class="main-section__team-section-item__name text-color--white"
+              >
+                Alex Turner
+              </div>
+              <div
+                class="main-section__team-section-item__position text-color--main"
+              >
+                CFO
+              </div>
+            </div>
+          </div>
+          <div class="main-section__team-section-right__bottom">
+            <div class="main-section__team-section-item">
+              <div class="main-section__team-section-item__avatar">
+                <img src="assets/images/svgs/team-cmo.svg" alt="team-avatar" />
+              </div>
+              <div
+                class="main-section__team-section-item__name text-color--white"
+              >
+                Ivan Fletcher
+              </div>
+              <div
+                class="main-section__team-section-item__position text-color--main"
+              >
+                CMO
+              </div>
+            </div>
+            <div class="main-section__team-section-item">
+              <div class="main-section__team-section-item__avatar">
                 <img
-                  src="/assets/images/svgs/partner-1.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-2.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-3.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-4.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-5.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-6.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-7.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-8.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-9.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-10.svg"
-                  alt="partner-icon"
-                />
-                <img
-                  src="/assets/images/svgs/partner-11.svg"
-                  alt="partner-icon"
+                  src="assets/images/svgs/team-designer.svg"
+                  alt="team-avatar"
                 />
               </div>
-            </section>
-
-            <!-- TEAM SECTION -->
-            <section class="main-section__team-section section-mb" id="team">
-              <div class="main-section__team-section-left">
-                <h2
-                  class="main-section__partners-section-title section-title-no-mb text-color--main"
-                >
-                  Meet the team
-                </h2>
-                <p class="main-section__partners-section-desc">
-                  Our exceptional core team drives the vision of AbstraDEX with
-                  unwavering dedication. Experience and passion for DeFi,
-                  AbstraDEX team sets the stage for an future in blockchain
-                  space. <br />Join us for this journey!
-                </p>
-                <div class="main-section__partners-section-contact--bg">
-                  <div
-                    class="main-section__partners-section-contact w-100 h-100 text-color--main"
-                  >
-                    Contact us
-
-                    <img src="/assets/images/svgs/green-arrow.svg" alt="" />
-                  </div>
-                </div>
+              <div
+                class="main-section__team-section-item__name text-color--white"
+              >
+                VENda Sophia
               </div>
-              <div class="main-section__team-section-right">
-                <div class="main-section__team-section-right__top">
-                  <div class="main-section__team-section-item">
-                    <div class="main-section__team-section-item__avatar">
-                      <img
-                        src="/assets/images/svgs/team-ceo.svg"
-                        alt="team-avatar"
-                      />
-                    </div>
-                    <div
-                      class="main-section__team-section-item__name text-color--white"
-                    >
-                      Johnathan Roman
-                    </div>
-                    <div
-                      class="main-section__team-section-item__position text-color--main"
-                    >
-                      CEO
-                    </div>
-                  </div>
-                  <div class="main-section__team-section-item">
-                    <div class="main-section__team-section-item__avatar">
-                      <img
-                        src="/assets/images/svgs/team-cto.svg"
-                        alt="team-avatar"
-                      />
-                    </div>
-                    <div
-                      class="main-section__team-section-item__name text-color--white"
-                    >
-                      Danilo Bastos
-                    </div>
-                    <div
-                      class="main-section__team-section-item__position text-color--main"
-                    >
-                      CTO
-                    </div>
-                  </div>
-                  <div class="main-section__team-section-item">
-                    <div class="main-section__team-section-item__avatar">
-                      <img
-                        src="/assets/images/svgs/team-cfo.svg"
-                        alt="team-avatar"
-                      />
-                    </div>
-                    <div
-                      class="main-section__team-section-item__name text-color--white"
-                    >
-                      Alex Turner
-                    </div>
-                    <div
-                      class="main-section__team-section-item__position text-color--main"
-                    >
-                      CFO
-                    </div>
-                  </div>
-                </div>
-                <div class="main-section__team-section-right__bottom">
-                  <div class="main-section__team-section-item">
-                    <div class="main-section__team-section-item__avatar">
-                      <img
-                        src="/assets/images/svgs/team-cmo.svg"
-                        alt="team-avatar"
-                      />
-                    </div>
-                    <div
-                      class="main-section__team-section-item__name text-color--white"
-                    >
-                      Ivan Fletcher
-                    </div>
-                    <div
-                      class="main-section__team-section-item__position text-color--main"
-                    >
-                      CMO
-                    </div>
-                  </div>
-                  <div class="main-section__team-section-item">
-                    <div class="main-section__team-section-item__avatar">
-                      <img
-                        src="/assets/images/svgs/team-designer.svg"
-                        alt="team-avatar"
-                      />
-                    </div>
-                    <div
-                      class="main-section__team-section-item__name text-color--white"
-                    >
-                      VENda Sophia
-                    </div>
-                    <div
-                      class="main-section__team-section-item__position text-color--main"
-                    >
-                      Designer
-                    </div>
-                  </div>
-                  <div class="main-section__team-section-item">
-                    <div class="main-section__team-section-item__avatar">
-                      <img
-                        src="/assets/images/svgs/team-cmm.svg"
-                        alt="team-avatar"
-                      />
-                    </div>
-                    <div
-                      class="main-section__team-section-item__name text-color--white"
-                    >
-                      Melissa Rose
-                    </div>
-                    <div
-                      class="main-section__team-section-item__position text-color--main"
-                    >
-                      CM Manager
-                    </div>
-                  </div>
-                </div>
+              <div
+                class="main-section__team-section-item__position text-color--main"
+              >
+                Designer
               </div>
-            </section>
+            </div>
+            <div class="main-section__team-section-item">
+              <div class="main-section__team-section-item__avatar">
+                <img src="assets/images/svgs/team-cmm.svg" alt="team-avatar" />
+              </div>
+              <div
+                class="main-section__team-section-item__name text-color--white"
+              >
+                Melissa Rose
+              </div>
+              <div
+                class="main-section__team-section-item__position text-color--main"
+              >
+                CM Manager
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="main-section__footer" id="contact">
+      <div class="content-container footer-container">
+        <div class="main-section__footer-left">
+          <div class="main-section__footer-left__powered">
+            <img src="assets/images/svgs/fundraising-avatar.svg" alt="" />
+
+            <div class="powerd-info">
+              <div class="powerd-info-top text-color--white">AbstraDEX</div>
+              <div class="powerd-info-bottom">© 2023 Powered By AbstraDEX</div>
+            </div>
           </div>
         </div>
 
-        <!-- FOOTER SECTION -->
-        <footer class="main-section__footer">
-          <div class="content-container footer-container">
-            <div class="main-section__footer-left">
-              <div class="main-section__footer-left__powered">
-                <img src="/assets/images/svgs/fundraising-avatar.svg" alt="" />
+        <div class="main-section__footer-left__socials">
+          <a href="https://twitter.com/AbstraDEX" target="_blank">
+            <img src="assets/images/svgs/twitter.svg" alt="" />
+          </a>
+          <a href="https://discord.gg/YTrtVFkbZe" target="_blank">
+            <img src="assets/images/svgs/discord.svg" alt="" />
+          </a>
+          <a href="https://twitter.com/AbstraDEX" target="_blank">
+            <img src="assets/images/svgs/telegram.svg" alt="" />
+          </a>
+          <a href="https://linktr.ee/abstradex" target="_blank">
+            <img src="assets/images/svgs/linktree.svg" alt="" />
+          </a>
+        </div>
 
-                <div class="powerd-info">
-                  <div class="powerd-info-top text-color--white">AbstraDEX</div>
-                  <div class="powerd-info-bottom">
-                    © 2023 Powered By AbstraDEX
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="main-section__footer-right text-color--white">
+          <ul class="main-section__footer-right__list">
+            <li>Docs</li>
+            <li>Blog</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-            <div class="main-section__footer-left__socials">
-              <a href="https://twitter.com/AbstraDEX" target="_blank">
-                <img src="/assets/images/svgs/twitter.svg" alt="" />
-              </a>
-              <a href="https://discord.gg/YTrtVFkbZe" target="_blank">
-                <img src="/assets/images/svgs/discord.svg" alt="" />
-              </a>
-              <a href="https://twitter.com/AbstraDEX" target="_blank">
-                <img src="/assets/images/svgs/telegram.svg" alt="" />
-              </a>
-              <a href="https://linktr.ee/abstradex" target="_blank">
-                <img src="/assets/images/svgs/linktree.svg" alt="" />
-              </a>
-            </div>
-
-            <div class="main-section__footer-right text-color--white">
-              <ul class="main-section__footer-right__list">
-                <li>Docs</li>
-                <li>Blog</li>
-                <li>Contact us</li>
-              </ul>
-            </div>
-          </div>
-        </footer>
-      </section>
-    </main>
     <script src="main.js"></script>
   </body>
 </html>
