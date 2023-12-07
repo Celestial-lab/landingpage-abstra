@@ -1,7 +1,10 @@
 const domain = "http://192.168.1.8:3000";
-const navLink = document.querySelectorAll(".sidebar__nav-link");
+const navLinks = document.querySelectorAll(".sidebar__nav-item");
 const launchAppButton = document.querySelector(".launch-app");
 const buyVenButton = document.querySelector(".buy-ven");
+const menuButton = document.querySelector(".mobile-menu-button");
+const menu = document.querySelector(".sidebar__nav-list");
+const closeMenuButton = document.querySelector(".close-menu-button");
 
 const redirectLink = () => {
   window.location.assign(`${domain}/swap`);
@@ -9,26 +12,37 @@ const redirectLink = () => {
 
 launchAppButton.addEventListener("click", redirectLink);
 
-const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("section");
 
-function scrollActive() {
-  const scrollY = window.pageYOffset;
-
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    let sectionId = current.getAttribute("id");
-
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".sidebar__nav-link a[href*=" + sectionId + "]")
-        .classList.add("active");
-    } else {
-      document
-        .querySelector(".sidebar__nav-link a[href*=" + sectionId + "]")
-        .classList.remove("active");
-    }
-  });
+function activeLink(li) {
+  navLinks.forEach((item) => item.classList.remove("active"));
+  li.classList.add("active");
 }
-window.addEventListener("scroll", scrollActive);
-window.removeEventListener("scroll", scrollActive);
+
+navLinks.forEach((item) =>
+  item.addEventListener("click", function () {
+    activeLink(this);
+    toggleMenu();
+  })
+);
+
+function toggleMenu() {
+  menu.classList.toggle("open");
+}
+
+menuButton.addEventListener("click", toggleMenu);
+closeMenuButton.addEventListener("click", toggleMenu);
+
+// window.onscroll = () => {
+//   sections.forEach((section) => {
+//     let top = window.scrollY;
+//     let offset = section.offsetTop;
+//     let height = section.offsetHeight;
+//     let id = section.getAttribute("id");
+
+//     if (top >= offset && top < offset + height) {
+//       const target = document.querySelector(`[href='#${id}']`).parentElement;
+//       activeLink(target);
+//     }
+//   });
+// };
