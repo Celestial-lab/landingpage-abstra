@@ -3,12 +3,13 @@
 :root {
   /* COLOR */
   --bg-color: #010100;
-  --main-color: #14f194;
+  --main-color: #0cc697;
   --header-color: #0d0d0f;
   --white-color: #ffffff;
   --black-color: #000000;
   --bg-button-color-1: #1a1e21;
   --text-color-1: #999999;
+  --primary-color: #005741;
 
   /* FONT */
   --mono: "JetBrains Mono", monospace;
@@ -144,10 +145,10 @@ li {
 }
 
 .venuswap__button {
-  min-height: 44px;
+  height: 35px;
   border: none;
   border-radius: 25px;
-  padding: 0 16px;
+  padding: 8px 16px;
 
   display: flex;
   justify-content: center;
@@ -158,6 +159,7 @@ li {
 
   background: #1a1e21;
   color: var(--white-color);
+  font-family: var(--mono);
   white-space: nowrap;
   font-size: clamp(10px, 2vw, 16px);
 }
@@ -166,11 +168,17 @@ li {
   .venuswap__button {
     background: var(--white-color);
     color: var(--black-color);
+    height: 44px;
   }
 
   .venuswap__button.launch-app {
-    background: var(--main-color);
-    color: var(--black-color);
+    background: #005741;
+    color: var(--white-color);
+    width: 169px;
+  }
+
+  #buy-ven {
+    width: 155px;
   }
 }
 
@@ -184,7 +192,41 @@ li {
   height: 16px;
 }
 
-.launch-app {
+/* PRELOADING */
+
+.pre-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  opacity: 1;
+  transition: all 1s linear;
+
+  background: rgba(0, 0, 0, 1);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 1;
+}
+
+.pre-loading.is-loaded {
+  z-index: -99;
+  opacity: 0;
+}
+
+/* .is-disable-scroll {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh !important;
+} */
+
+.pre-loading-text {
+  color: var(--white-color);
+  font-size: clamp(16px, 4vw, 26px);
+  font-weight: 500;
 }
 
 /* SIDEBAR */
@@ -207,17 +249,20 @@ li {
 
 .sidebar__header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
   padding: 24px 12px;
 
   font-weight: 800;
   font-size: clamp(10px, 2vw, 18px);
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 960px) {
   .sidebar__header {
+    flex-direction: row;
+    gap: 8px;
     color: var(--white-color);
   }
 }
@@ -227,6 +272,7 @@ li {
 }
 
 .mobile-logo {
+  max-width: 22px;
   display: block !important;
 }
 
@@ -364,6 +410,11 @@ li {
   overflow-x: hidden;
 } */
 
+.mobile-menu-button {
+  filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(90deg)
+    brightness(100%) contrast(100%);
+}
+
 .mobile-menu-button,
 .close-menu-button {
   display: block;
@@ -397,16 +448,17 @@ li {
 
   display: flex;
   align-items: center;
-  background-color: var(--main-color);
+  background-color: var(--primary-color);
 
   width: 100%;
-  min-height: 80px;
+  height: 70px;
   padding: 10px;
 }
 
 @media screen and (min-width: 960px) {
   .main-section__header {
     background-color: var(--header-color);
+    min-height: 80px;
   }
 }
 
@@ -528,7 +580,8 @@ li {
   .about-zetachain--bg {
     background-image: url("./assets/images/svgs/about-border-bg.svg");
     max-width: 304px;
-    aspect-ratio: 8/3;
+    max-height: 100px;
+    aspect-ratio: 5/3;
   }
 }
 
@@ -570,7 +623,7 @@ li {
 
 @media screen and (min-width: 575px) {
   .about-zetachain-item {
-    padding: 12px 24px;
+    padding: 0px 24px;
   }
 }
 
@@ -623,15 +676,16 @@ li {
 
 @media screen and (min-width: 960px) {
   .main-section__why-choose-title {
-    position: relative;
+    top: -20px;
+    left: -85px;
     max-width: 100%;
   }
 }
 
 .main-section__why-choose__circle {
   position: absolute;
-  top: 56px;
-  right: 24px;
+  top: -150px;
+  right: 22px;
 
   width: 100%;
   max-width: 116.77px;
@@ -705,8 +759,8 @@ li {
 
 @media screen and (min-width: 960px) {
   .main-section__why-choose__circle {
-    top: 0;
-    right: 80px;
+    top: -40px;
+    right: 55px;
     transform: translate(-50%, -50%);
     max-width: 216.46px;
   }
@@ -750,10 +804,10 @@ li {
 
   display: flex;
   flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: repeat(2, minmax(149.45px, 1fr)); */
+  justify-content: center;
   grid-gap: 8px;
   padding: 10px;
+  margin-top: 46px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1088,15 +1142,26 @@ li {
 .main-section__partners-section:before {
   content: "";
   background: url("./assets/images/svgs/partners-star-icon.svg") no-repeat 100%;
-  width: 80.08px;
-  height: 80.22px;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
 
   position: absolute;
   top: 12px;
   right: 80px;
 }
 
+@media screen and (min-width: 768px) {
+  .main-section__partners-section:before {
+    width: 80.08px;
+    height: 80.22px;
+    background-size: cover;
+  }
+}
+
 .main-section__partners-section-items {
+  --amount: 2;
+
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
@@ -1104,7 +1169,16 @@ li {
   row-gap: 18px;
 }
 
-.main-section__partners-section-item {
+@media screen and (max-width: 768px) {
+  .main-section__partners-section-items > img {
+    width: calc((100% / var(--amount)) - 10px);
+    height: 52px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}
+
+/* .main-section__partners-section-item {
   --linear-1: rgba(0, 0, 0, 0.2);
   --linear-2: rgba(0, 255, 148, 0.3);
   --linear-3: rgba(217, 217, 217, 0);
@@ -1126,9 +1200,9 @@ li {
   min-width: 178px;
   max-width: calc(50% - 10px);
   height: 52px;
-}
+} */
 
-.main-section__partners-section-item img {
+/* .main-section__partners-section-item img {
   height: 27px;
   width: 100%;
   object-fit: contain;
@@ -1144,7 +1218,7 @@ li {
   .main-section__partners-section-item img {
     height: 35px;
   }
-}
+} */
 
 /* TEAM */
 .main-section__team-section {
@@ -1168,7 +1242,7 @@ li {
   grid-gap: 24px;
 
   width: 100%;
-  max-width: 434px;
+  max-width: 493px;
   margin-bottom: 36px;
 }
 
@@ -1181,7 +1255,7 @@ li {
   position: relative;
   background-image: url("./assets/images/svgs/contact-us-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   width: 100%;
   height: auto;
@@ -1191,13 +1265,15 @@ li {
 
 .main-section__partners-section-contact {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
   padding: 12px;
 
   font-size: clamp(14px, 4vw, 24px);
   font-weight: var(--font-400);
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .main-section__partners-section-contact img {
@@ -1211,6 +1287,11 @@ li {
 
   .main-section__partners-section-contact--bg {
     max-width: 238.26px;
+    height: 67.63px;
+  }
+
+  .main-section__partners-section-contact {
+    justify-content: center;
   }
 }
 
@@ -1220,6 +1301,7 @@ li {
   row-gap: 24px;
   width: 100%;
   max-width: 958px;
+  margin-bottom: 36px;
 }
 
 .main-section__team-section-item {
@@ -1237,6 +1319,7 @@ li {
 
 .main-section__team-section-right__top {
   justify-content: left;
+  margin-bottom: 26px;
 }
 
 .main-section__team-section-right__bottom {

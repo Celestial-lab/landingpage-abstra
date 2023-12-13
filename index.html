@@ -6,7 +6,13 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>AbstraDEX</title>
   </head>
-  <body>
+  <body class="is-disable-scroll">
+    <!-- PRELOADING -->
+    <!-- <div class="pre-loading" id="pre-loading">
+      <div class="pre-loading-text">Please waiting...</div>
+      <div class="pre-loading-text" id="pre-loading-text">0%</div>
+    </div> -->
+
     <!-- MAIN SECTION -->
     <!-- HEADER -->
     <header class="main-section__header">
@@ -18,12 +24,12 @@
         <div class="sidebar__header">
           <img
             class="logo desktop-logo"
-            src="assets/images/svgs/pc-logo.svg"
+            src="assets/images/svgs/logo.svg"
             alt="logo"
           />
           <img
             class="logo mobile-logo"
-            src="assets/images/svgs/ven-icon.svg"
+            src="assets/images/svgs/logo.svg"
             alt="logo"
           />
           AbstraDEX
@@ -32,17 +38,17 @@
         <ul class="sidebar__nav-list content-container">
           <button class="close-menu-button">Close</button>
 
-          <li class="sidebar__nav-item active">
-            <a href="#home" class="sidebar__nav-link"> Homepage </a>
+          <li class="sidebar__nav-item active" data-id="0">
+            <a class="sidebar__nav-link"> Homepage </a>
           </li>
-          <li class="sidebar__nav-item">
-            <a href="#team" class="sidebar__nav-link"> Team </a>
+          <li class="sidebar__nav-item" data-id="3">
+            <a class="sidebar__nav-link"> Team </a>
           </li>
-          <li class="sidebar__nav-item">
-            <a href="#partner" class="sidebar__nav-link"> Partner </a>
+          <li class="sidebar__nav-item" data-id="2">
+            <a class="sidebar__nav-link"> Partner </a>
           </li>
-          <li class="sidebar__nav-item">
-            <a href="#contact" class="sidebar__nav-link"> Contact </a>
+          <li class="sidebar__nav-item" data-id="4">
+            <a class="sidebar__nav-link"> Contact </a>
           </li>
         </ul>
       </nav>
@@ -51,12 +57,12 @@
         <button class="venuswap__button" id="buy-ven">
           <img
             class="logo mobile-logo"
-            src="assets/images/svgs/pc-logo.svg"
+            src="assets/images/svgs/logo.svg"
             alt="logo"
           />
           <img
             class="logo desktop-logo"
-            src="assets/images/svgs/ven-icon.svg"
+            src="assets/images/svgs/logo.svg"
             alt="logo"
           />
           Buy ABS
@@ -87,37 +93,9 @@
       <div class="main-section__content__hero section-mb content-container">
         <div class="main-section__content__hero--container">
           <div class="main-section__content__hero-main-text">
-            Discover the decentralized suite <br />Security - Quick - Trust for
-            your digital assets.
+            Discover the decentralized suite <br />Security - Quick - Trust<br />
+            for your digital assets.
           </div>
-
-          <!-- <span class="main-section__content__hero-view-docs">
-            View the Docs
-            <img
-              class="mobile-logo"
-              src="assets/images/svgs/long-arrow-icon.svg"
-              alt=""
-            />
-          </span>
-
-          <div class="hero-button__wrapper">
-            <button class="venuswap__button buy-ven">
-              <img
-                class="logo mobile-logo"
-                src="assets/images/svgs/pc-logo.svg"
-                alt="logo"
-              />
-              <img
-                class="logo desktop-logo"
-                src="assets/images/svgs/ven-icon.svg"
-                alt="logo"
-              />
-              Buy VEN
-            </button>
-            <button class="venuswap__button launch-app bg-color--main">
-              Launch App
-            </button>
-          </div> -->
         </div>
       </div>
 
@@ -162,18 +140,18 @@
 
       <!-- WHY CHOOSE SECTION -->
       <section class="main-section__why-choose section-mb">
-        <div class="main-section__why-choose__circle">
-          <div class="circle-box"></div>
-        </div>
         <div class="main-section__why-choose-bg"></div>
         <!-- WHY CHOOSE -->
         <div class="content-container">
           <div class="main-section__why-choose--container">
+            <div class="main-section__why-choose__circle">
+              <div class="circle-box"></div>
+            </div>
             <h2
               class="main-section__why-choose-title section-title text-color--main"
             >
               Why choose
-              <span class="text-color--white">AbstraDEX ?</span>
+              <span class="text-color--white">AbstraDEX?</span>
             </h2>
             <div class="main-section__why-choose-items">
               <div class="main-section__why-choose-item--bg">
@@ -230,9 +208,9 @@
                     Secure
                   </div>
                   <div class="main-section__why-choose-item-desc">
-                    Built on the ABS chain, AbstraDEX is fortified with advanced
-                    security protocols, smartcontract audits to protect your
-                    assets and data.
+                    Built on the Multi-chain, AbstraDEX is fortified with
+                    advanced security protocols, smartcontract audits to protect
+                    your assets and data.
                   </div>
                 </div>
               </div>
@@ -266,45 +244,33 @@
     <section class="main-section__partners-section section-mb" id="partner">
       <div class="content-container">
         <h2
-          class="main-section__partners-section-title section-title text-color--main"
+          class="main-section__partners-section-title section-title text-color--white"
         >
           Partners
         </h2>
 
         <div class="main-section__partners-section-items">
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-1.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-2.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-3.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-4.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-5.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-6.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-7.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-8.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-9.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-10.svg" alt="partner-icon" />
-          </div>
-          <div class="main-section__partners-section-item">
-            <img src="assets/images/svgs/partner-11.svg" alt="partner-icon" />
-          </div>
+          <img src="assets/images/partner-1.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-2.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-3.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-4.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-5.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-6.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-7.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-8.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-9.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-10.png" alt="partner-icon" />
+
+          <img src="assets/images/partner-11.png" alt="partner-icon" />
         </div>
       </div>
     </section>
@@ -314,24 +280,25 @@
       <div class="content-container main-section__team-section">
         <div class="main-section__team-section-left">
           <h2
-            class="main-section__partners-section-title section-title-no-mb text-color--main"
+            class="main-section__partners-section-title section-title-no-mb text-color--white"
           >
             Meet the team
           </h2>
           <p class="main-section__partners-section-desc">
             Our exceptional core team drives the vision of AbstraDEX with
-            unwavering dedication. Experience and passion for DeFi, AbstraDEX
-            team sets the stage for an future in blockchain space.
-            <br />Join us for this journey!
+            unwavering dedication. <br />
+            Experience and passion for DeFi, AbstraDEX team sets the stage for
+            an future in blockchain space. <br />Join us for this journey!
           </p>
           <div class="main-section__partners-section-contact--bg">
-            <div
+            <a
+              href="#"
               class="main-section__partners-section-contact w-100 h-100 text-color--main"
             >
               Contact us
 
               <img src="assets/images/svgs/green-arrow.svg" alt="" />
-            </div>
+            </a>
           </div>
         </div>
         <div class="main-section__team-section-right">
@@ -385,6 +352,24 @@
           <div class="main-section__team-section-right__bottom">
             <div class="main-section__team-section-item">
               <div class="main-section__team-section-item__avatar">
+                <img
+                  src="assets/images/svgs/team-designer.svg"
+                  alt="team-avatar"
+                />
+              </div>
+              <div
+                class="main-section__team-section-item__name text-color--white"
+              >
+                Vanda Sophia
+              </div>
+              <div
+                class="main-section__team-section-item__position text-color--main"
+              >
+                CMO
+              </div>
+            </div>
+            <div class="main-section__team-section-item">
+              <div class="main-section__team-section-item__avatar">
                 <img src="assets/images/svgs/team-cmo.svg" alt="team-avatar" />
               </div>
               <div
@@ -395,27 +380,10 @@
               <div
                 class="main-section__team-section-item__position text-color--main"
               >
-                CMO
-              </div>
-            </div>
-            <div class="main-section__team-section-item">
-              <div class="main-section__team-section-item__avatar">
-                <img
-                  src="assets/images/svgs/team-designer.svg"
-                  alt="team-avatar"
-                />
-              </div>
-              <div
-                class="main-section__team-section-item__name text-color--white"
-              >
-                VENda Sophia
-              </div>
-              <div
-                class="main-section__team-section-item__position text-color--main"
-              >
                 Designer
               </div>
             </div>
+
             <div class="main-section__team-section-item">
               <div class="main-section__team-section-item__avatar">
                 <img src="assets/images/svgs/team-cmm.svg" alt="team-avatar" />
@@ -441,7 +409,7 @@
       <div class="content-container footer-container">
         <div class="main-section__footer-left">
           <div class="main-section__footer-left__powered">
-            <img src="assets/images/svgs/fundraising-avatar.svg" alt="" />
+            <img src="assets/images/svgs/logo.svg" alt="" />
 
             <div class="powerd-info">
               <div class="powerd-info-top text-color--white">AbstraDEX</div>
@@ -475,6 +443,8 @@
       </div>
     </section>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
