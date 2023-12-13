@@ -1,4 +1,4 @@
-const domain = "http://192.168.1.8:3000";
+const domain = "https://exchange.abstradex.xyz";
 const navLinks = document.querySelectorAll(".sidebar__nav-item");
 const launchAppButton = document.querySelector(".launch-app");
 const buyVenButton = document.querySelector(".buy-ven");
@@ -43,11 +43,15 @@ function handleLoading(percent) {
 //   container.classList.remove("is-disable-scroll");
 // }
 
-const redirectLink = () => {
-  window.location.assign(`${domain}/swap`);
+const redirectLink = (domain) => {
+  window.location.assign(`${domain}`);
 };
 
-launchAppButton.addEventListener("click", redirectLink);
+launchAppButton.addEventListener("click", redirectLink(domain));
+
+const absDomain = `${domain}/swap`;
+
+buyVenButton.addEventListener("click", redirectLink(absDomain));
 
 const sections = document.querySelectorAll("section[id]");
 console.log(sections);
