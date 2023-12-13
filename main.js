@@ -43,15 +43,13 @@ function handleLoading(percent) {
 //   container.classList.remove("is-disable-scroll");
 // }
 
-const redirectLink = (domain) => {
+const redirectLink = () => {
   window.location.assign(`${domain}`);
 };
 
-launchAppButton.addEventListener("click", redirectLink(domain));
+launchAppButton.addEventListener("click", redirectLink);
 
-const absDomain = `${domain}/swap`;
-
-buyVenButton.addEventListener("click", redirectLink(absDomain));
+buyVenButton.addEventListener("click", redirectLink);
 
 const sections = document.querySelectorAll("section[id]");
 console.log(sections);

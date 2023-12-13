@@ -615,7 +615,7 @@ li {
 
 .about-zetachain-item {
   color: var(--main-color);
-  font-family: var(--inter);
+  font-family: var(--mono);
   width: 100%;
   height: 100%;
   padding: 12px;
