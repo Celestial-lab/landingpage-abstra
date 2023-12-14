@@ -673,7 +673,7 @@ li {
   width: 100%;
   max-width: 50%;
   position: absolute;
-  top: -65px;
+  top: -125px;
   right: 0;
 }
 
@@ -744,9 +744,9 @@ li {
   background: url("./assets/images/svgs/why-choose-star.svg") no-repeat 100%;
   width: 91.69px;
   height: 94.74px;
-  bottom: 0;
-  right: 0;
-  transform: translate(-10px, -80px);
+  bottom: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 .main-section__why-choose-bg::after {
@@ -781,6 +781,12 @@ li {
 
   .circle-box:after {
     opacity: 1;
+  }
+
+  .main-section__why-choose-bg::before {
+    bottom: 0;
+    right: 0;
+    transform: translate(-10px, -80px);
   }
 }
 
