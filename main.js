@@ -49,7 +49,7 @@ const redirectLink = (domain) => {
 };
 
 window.addEventListener("click", () => {
-  switchNetwork.classList.toggle("open");
+  switchNetwork.classList.remove("open");
 });
 
 launchAppButton.addEventListener("click", (e) => {
