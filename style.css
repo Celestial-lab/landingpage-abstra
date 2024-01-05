@@ -164,6 +164,7 @@ li {
   font-family: var(--mono);
   white-space: nowrap;
   font-size: clamp(10px, 2vw, 16px);
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -1447,13 +1448,19 @@ li {
 
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -100%;
   right: 0;
 
   min-width: 184px;
   transform: translateY(-50%);
   opacity: 0;
   transition: transform 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .switch-network-wrapper {
+    left: 0;
+  }
 }
 
 .switch-network-wrapper p {
