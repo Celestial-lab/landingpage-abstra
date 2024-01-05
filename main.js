@@ -48,9 +48,14 @@ const redirectLink = (domain) => {
   window.location.assign(`${domain}`);
 };
 
-launchAppButton.addEventListener("click", () =>
-  switchNetwork.classList.toggle("open")
-);
+window.addEventListener("click", () => {
+  switchNetwork.classList.toggle("open");
+});
+
+launchAppButton.addEventListener("click", (e) => {
+  e.stopPropagation();
+  switchNetwork.classList.toggle("open");
+});
 
 buyVenButton.addEventListener("click", () => redirectLink(baseUrl));
 
