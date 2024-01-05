@@ -146,7 +146,7 @@ li {
   left: calc(-50vw + 50%);
 }
 
-.venuswap__button {
+.abs__button {
   height: 35px;
   border: none;
   border-radius: 25px;
@@ -167,13 +167,13 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .venuswap__button {
+  .abs__button {
     background: var(--white-color);
     color: var(--black-color);
     height: 44px;
   }
 
-  .venuswap__button.launch-app {
+  .abs__button.launch-app {
     background: #005741;
     color: var(--white-color);
     width: 169px;
@@ -185,12 +185,12 @@ li {
   }
 }
 
-.venuswap__button > img {
+.abs__button > img {
   width: 24px;
   height: 24px;
 }
 
-.venuswap__button .dropdown-icon {
+.abs__button .dropdown-icon {
   width: 16px;
   height: 16px;
 }
