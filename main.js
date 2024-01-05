@@ -1,4 +1,4 @@
-const domain = "https://exchange.abstradex.xyz";
+const baseUrl = "https://exchange.abstradex.xyz";
 const navLinks = document.querySelectorAll(".sidebar__nav-item");
 const launchAppButton = document.querySelector(".launch-app");
 const buyVenButton = document.querySelector("#buy-ven");
@@ -6,6 +6,7 @@ const menuButton = document.querySelector(".mobile-menu-button");
 const menu = document.querySelector(".sidebar__nav-list");
 const closeMenuButton = document.querySelector(".close-menu-button");
 const container = document.querySelector("body");
+const switchNetwork = document.querySelector(".switch-network-wrapper");
 // const preLoadingElm = document.querySelector("#pre-loading");
 
 // function initLoading() {
@@ -43,13 +44,15 @@ function handleLoading(percent) {
 //   container.classList.remove("is-disable-scroll");
 // }
 
-const redirectLink = () => {
+const redirectLink = (domain) => {
   window.location.assign(`${domain}`);
 };
 
-launchAppButton.addEventListener("click", redirectLink);
+launchAppButton.addEventListener("click", () =>
+  switchNetwork.classList.toggle("open")
+);
 
-buyVenButton.addEventListener("click", redirectLink);
+buyVenButton.addEventListener("click", () => redirectLink(baseUrl));
 
 const sections = document.querySelectorAll("section[id]");
 console.log(sections);
@@ -74,17 +77,3 @@ function toggleMenu() {
 
 menuButton.addEventListener("click", toggleMenu);
 closeMenuButton.addEventListener("click", toggleMenu);
-
-// window.onscroll = () => {
-//   sections.forEach((section) => {
-//     let top = window.scrollY;
-//     let offset = section.offsetTop;
-//     let height = section.offsetHeight;
-//     let id = section.getAttribute("id");
-
-//     if (top >= offset && top < offset + height) {
-//       const target = document.querySelector(`[href='#${id}']`).parentElement;
-//       activeLink(target);
-//     }
-//   });
-// };
