@@ -1448,10 +1448,10 @@ li {
 
   position: absolute;
   bottom: 0;
-  left: -100%;
+  /* left: -100%; */
   right: 0;
 
-  min-width: 184px;
+  min-width: 200px;
   transform: translateY(-50%);
   opacity: 0;
   transition: transform 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -1459,7 +1459,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .switch-network-wrapper {
-    left: 0;
+    left: -25px;
   }
 }
 
@@ -1488,6 +1488,10 @@ li {
   font-weight: 700;
 }
 
+.switch-network-wrapper .chain-list .chain-item > span {
+  word-wrap: break-word;
+}
+
 .switch-network-wrapper .chain-list .chain-item a {
   position: absolute;
   width: 100%;
@@ -1498,4 +1502,8 @@ li {
 
 .switch-network-wrapper .chain-list .chain-item:hover {
   transform: scale(1.07);
+}
+
+.chain-logo {
+  width: 25px;
 }
